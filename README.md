@@ -1,20 +1,25 @@
 # 🛡️ PHISHGUARD-X
 
-## Explainable Phishing URL Detection Platform
+### Explainable Phishing URL Detection Platform
 
-PHISHGUARD-X is a machine-learning based phishing URL detection platform that analyzes URL structure, domain intelligence, and web behavior to classify URLs as **Legitimate** or **Phishing**.
-
-The project combines a domain-aware machine-learning workflow with **XGBoost**, **SHAP explainability**, unseen validation, and an interactive **Streamlit dashboard**.
-
----
+An end-to-end machine learning system for detecting phishing URLs using **Tuned XGBoost**, domain-aware evaluation, and **SHAP explainability**.
 
 ## 🚀 Live Demo
 
-🔗 **PHISHGUARD-X:**  
-https://phishguard-x-myvar8ezigk4bydncy95w2.streamlit.app/
+🔗 [Launch PHISHGUARD-X](https://phishguard-x-myvar8ezigk4bydncy95w2.streamlit.app/)
 
-> Interactive Streamlit application for explainable phishing URL detection.
+## 📊 Key Results
 
+| Metric | Result |
+|---|---:|
+| Dataset Size | 11,500 URLs |
+| Legitimate URLs | 6,500 |
+| Phishing URLs | 5,000 |
+| ML Features | 15 |
+| Model | Tuned XGBoost |
+| F1 Score | 0.8892 |
+| ROC-AUC | 0.9634 |
+| Decision Threshold | 0.48 |
 ## 🚀 Key Features
 
 - 🔎 Single URL phishing detection
