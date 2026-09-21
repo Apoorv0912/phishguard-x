@@ -28,8 +28,8 @@ import whois
 TRANCO_FILE = (
     Path(__file__).resolve().parents[2]
     / "data"
-    / "raw"
-    / "tranco_GQJ9K.csv"
+    / "processed"
+    / "tranco_top100k.csv"
 )
 
 TRANCO_RANK = {}
