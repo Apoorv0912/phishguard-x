@@ -1,0 +1,4 @@
+Domain,Model_Probability,Prediction,Top_1_Feature,Top_1_SHAP,Top_2_Feature,Top_2_SHAP,Top_3_Feature,Top_3_SHAP,Top_4_Feature,Top_4_SHAP,Top_5_Feature,Top_5_SHAP
+cloud.microsoft,0.6488336,PHISHING,Prefix/Suffix,-0.40447018,Domain_Age,0.396243,URL_Length,0.35406905,Web_Traffic,-0.2648343,URL_Depth,0.24514408
+workers.dev,0.6488336,PHISHING,Prefix/Suffix,-0.40447018,Domain_Age,0.396243,URL_Length,0.35406905,Web_Traffic,-0.2648343,URL_Depth,0.24514408
+cloudflare-dns.com,0.90351903,PHISHING,Prefix/Suffix,2.2683098,Domain_Age,-0.38302603,Web_Traffic,-0.32551676,Mouse_Over,0.21361603,Web_Forwards,0.16733621
