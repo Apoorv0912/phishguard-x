@@ -166,6 +166,36 @@ The tests included examples from domains such as Google, Microsoft, Apple, GitHu
 
 These checks are qualitative sanity checks and are **not** used as a replacement for the held-out domain-aware evaluation.
 
+
+## 📁 Project Structure
+
+```text
+phishguard-x/
+│
+├── data/
+│   ├── raw/                 # Original datasets
+│   ├── processed/           # Processed features and Tranco Top-100K
+│   └── validation/          # Unseen validation datasets
+│
+├── models/                 # Trained models and explainability artifacts
+│
+├── src/
+│   ├── data/               # Data loading utilities
+│   ├── features/           # URL feature extraction
+│   ├── eda/                # Exploratory data analysis utilities
+│   ├── preprocessing/      # Feature preparation and scaling
+│   └── explainability/     # SHAP utilities
+│
+├── notebooks/              # Research and experimentation notebooks
+│
+├── reports/
+│   └── figures/             # Generated analysis figures
+│
+├── app.py                  # Streamlit application
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+└── .gitignore
+
 📊 Dataset
 PHISHGUARD-X uses multiple raw data sources for building the phishing URL detection dataset and supporting domain-intelligence features.
 
