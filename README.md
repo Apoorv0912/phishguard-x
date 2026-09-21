@@ -65,43 +65,32 @@ An end-to-end machine learning system for detecting phishing URLs using **Tuned 
 
 ---
 
-# 🏗️ Project Workflow
+## 🔄 Project Workflow
 
 ```text
 Raw URL Datasets
-       │
-       ▼
+       ↓
+Data Understanding & Cleaning
+       ↓
 Feature Extraction
-       │
-       ▼
-URL + Domain + Web Behavior Features
-       │
-       ▼
-Data Cleaning & EDA
-       │
-       ▼
-Feature Engineering
-       │
-       ▼
+       ↓
+EDA & Feature Analysis
+       ↓
 Domain-Aware Train/Test Split
-       │
-       ▼
+       ↓
 Baseline Model Comparison
-       │
-       ▼
+       ↓
 XGBoost Hyperparameter Tuning
-       │
-       ▼
-Classification Threshold
-       │
-       ▼
-Phishing / Legitimate Verdict
-       │
-       ▼
+       ↓
+Classification Threshold Optimization
+       ↓
 SHAP Explainability
-       │
-       ▼
-Streamlit Security Dashboard
+       ↓
+Unseen Validation
+       ↓
+Streamlit Web Application
+       ↓
+Live Deployment
 
 📊 Dataset
 PHISHGUARD-X uses multiple raw data sources for building the phishing URL detection dataset and supporting domain-intelligence features.
