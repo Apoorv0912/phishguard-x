@@ -8,6 +8,13 @@ The project combines a domain-aware machine-learning workflow with **XGBoost**, 
 
 ---
 
+## 🚀 Live Demo
+
+🔗 **PHISHGUARD-X:**  
+https://phishguard-x-myvar8ezigk4bydncy95w2.streamlit.app/
+
+> Interactive Streamlit application for explainable phishing URL detection.
+
 ## 🚀 Key Features
 
 - 🔎 Single URL phishing detection
