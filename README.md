@@ -92,6 +92,80 @@ Streamlit Web Application
        ↓
 Live Deployment
 
+
+## 📈 Model Performance
+
+### Baseline Models
+
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Decision Tree | 0.9008 | 0.8921 | 0.8680 | 0.8799 | 0.9586 |
+| Random Forest | 0.8853 | 0.8616 | 0.8650 | 0.8633 | 0.9568 |
+| Logistic Regression | 0.8757 | 0.8240 | 0.8940 | 0.8576 | 0.9105 |
+| KNN | 0.8397 | 0.7454 | 0.9370 | 0.8303 | 0.8795 |
+| XGBoost | 0.8472 | 0.7900 | 0.8650 | 0.8258 | 0.9560 |
+| SVM RBF | 0.8062 | 0.8604 | 0.6410 | 0.7347 | 0.9220 |
+
+### Tuned XGBoost
+
+| Metric | Score |
+|---|---:|
+| Accuracy | **0.9108** |
+| Precision | **0.9263** |
+| Recall | **0.8550** |
+| F1 Score | **0.8892** |
+| ROC-AUC | **0.9634** |
+
+The final model uses **domain-aware evaluation**, ensuring that domains appearing in the training set do not appear in the test set.
+
+
+## 🧠 Explainability with SHAP
+
+PHISHGUARD-X uses **SHAP (SHapley Additive exPlanations)** to explain why the model assigns a phishing probability to a URL.
+
+### Global Feature Importance
+
+The most influential features include:
+
+1. URL_Length
+2. Prefix/Suffix
+3. URL_Depth
+4. Web_Traffic
+5. iFrame
+6. Web_Forwards
+7. Domain_End
+8. Domain_Age
+
+SHAP explanations are available at both:
+- **Global level** — overall feature importance
+- **Individual URL level** — why a particular URL received its verdict
+
+The Streamlit application displays the major positive and negative feature contributions for each scanned URL.
+
+## 🧪 Validation
+
+### Unseen Legitimate-Domain Validation
+
+An additional validation set containing **100 previously unseen legitimate domains** was evaluated.
+
+| Result | Count |
+|---|---:|
+| Correctly classified as legitimate | 97 |
+| False positives | 3 |
+| False Positive Rate | **3%** |
+
+The false positives were further investigated using SHAP to understand which features contributed to the incorrect predictions.
+
+> This validation set is used as an additional sanity check and should not be interpreted as a full estimate of real-world generalization performance.
+
+## 🌐 Real-World Sanity Checks
+
+The deployed application was manually tested on selected legitimate and suspicious-looking URLs.
+
+The tests included examples from domains such as Google, Microsoft, Apple, GitHub and YouTube, along with deliberately suspicious-looking domains.
+
+These checks are qualitative sanity checks and are **not** used as a replacement for the held-out domain-aware evaluation.
+
 📊 Dataset
 PHISHGUARD-X uses multiple raw data sources for building the phishing URL detection dataset and supporting domain-intelligence features.
 
