@@ -41,3 +41,6 @@ Thumbs.db
 
 # Large raw datasets
 data/raw/tranco_GQJ9K.csv
+
+data/raw/1.Benign_list_big_final.csv
+data/raw/2.online-valid.csv
