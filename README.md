@@ -20,6 +20,35 @@ An end-to-end machine learning system for detecting phishing URLs using **Tuned 
 | F1 Score | 0.8892 |
 | ROC-AUC | 0.9634 |
 | Decision Threshold | 0.48 |
+
+## 🧰 Tech Stack
+
+### Machine Learning
+- Python
+- Scikit-learn
+- XGBoost
+- SHAP
+
+### Data Processing & Analysis
+- Pandas
+- NumPy
+- SciPy
+- Matplotlib
+- Seaborn
+
+### Web Application
+- Streamlit
+
+### Data & Model Utilities
+- PostgreSQL-ready workflow
+- Joblib
+- Requests
+- Python WHOIS
+
+### Development & Deployment
+- Git
+- GitHub
+- Streamlit Community Cloud
 ## 🚀 Key Features
 
 - 🔎 Single URL phishing detection
